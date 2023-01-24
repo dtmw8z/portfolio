@@ -1,0 +1,55 @@
+.photo-icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 1150px;
+  top: -30px;
+}
+
+.profile-icon {
+  position: absolute;
+  width: 680px;
+  height: 540px;
+  left: 411px;
+  top: 77px;
+}
+
+.ellipse1 {
+  position: absolute;
+  width: 345px;
+  height: 366px;
+  x: ;
+  left: 761px;
+  top: 86px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #868ae9;
+}
+
+.ellipse2 {
+  position: absolute;
+  width: 286px;
+  height: 294px;
+  left: 857px;
+  top: 323px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #63b8dc;
+}
+
+.name{
+  position: absolute;
+  top: 40%;
+  left: 2%;
+}
+
+.getcv{
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  align-items: center;
+}
+
+
+
+
