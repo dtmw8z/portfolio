@@ -18,7 +18,6 @@
   position: absolute;
   width: 345px;
   height: 366px;
-  x: ;
   left: 761px;
   top: 86px;
   border-radius: 50%;
@@ -37,19 +36,15 @@
   background: #63b8dc;
 }
 
-.name{
+.name {
   position: absolute;
   top: 40%;
   left: 2%;
 }
 
-.getcv{
+.getcv {
   position: absolute;
   top: 90%;
   left: 3%;
   align-items: center;
 }
-
-
-
-
