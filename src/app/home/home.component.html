@@ -1,34 +1,36 @@
-<div class="test">
-  <div class="nav-image">
-    <img
-      class="photo-icon float-right"
-      src="assets/images/nav.png"
-      alt="photo-icon"
-    />
-  </div>
-
-  <div class="profile-image">
-    <img
-      class="profile-icon"
-      src="assets/images/profile-photo.png"
-      alt="profile-icon"
-    />
-
-    <div class="ellipse1"></div>
-    <div class="ellipse2"></div>
-  </div>
-
-  <div class="name">
-    <h1>
-      Susan Babu <br />
-      Pandey
-    </h1>
-    <h5>I am a Software Engineer</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="header">
+        <div class="header-text">
+          <h1 class="text-center">
+            Hi,<br />
+            I'm Susan Babu Pandey
+          </h1>
+          <h5 class="text-center">I am a Software Engineer</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="profile-image">
+        <img
+          class="profile-icon"
+          src="assets/images/profile-photo.png"
+          alt="profile-icon"
+        />
+        <!-- <div class="ellipse1"></div>
+          <div class="ellipse2"></div> -->
+      </div>
+    </div>
   </div>
 
   <div class="getcv">
     <button type="button" class="btn btn-outline-info" (click)="downloadPdf()">
-      <i class="bi bi-cloud-download-fill p-2"></i><b>View CV</b>
+      <i class="bi bi-cloud-download-fill p-2"></i><b>Download CV</b>
     </button>
   </div>
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
 </div>

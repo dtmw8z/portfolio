@@ -1,0 +1,97 @@
+<div class="container">
+  <h1 class="text-center about">About Me</h1>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-6">
+      <ngb-carousel [showNavigationIndicators]="true">
+        <ng-template ngbSlide>
+          <mat-card class="image">
+            <img style="height: 415px;" mat-card-image src="/assets/images/me.png" alt="My Image" />
+          </mat-card>
+        </ng-template>
+        <ng-template ngbSlide>
+          <mat-card class="experience">
+            <mat-card-header>
+              <mat-card-title>My Experience</mat-card-title>
+            </mat-card-header>
+            <hr />
+            <mat-card-content>
+              <div class="div-work-history mb-25">
+                <h5 class="heading-7">2022, Jan - 2022, Aug</h5>
+                <h5 class="body-paragraph high-emphasis">Inovretail</h5>
+                <h5 id="Company-Location" class="body-paragraph low-emphasis">
+                  Porto, Portugal
+                </h5>
+                <h5 class="body-paragraph">Software Engineer</h5>
+              </div>
+              <div class="work-done">
+                <ul>
+                  <li>
+                    Worked closely with product development team on scope of
+                    present and future projects.
+                  </li>
+                  <li>
+                    Experienced with Angular Javascript Framework for the
+                    development of the frontend applications.
+                  </li>
+                  <li>
+                    Developed and Performed End to End tests for the better
+                    performance
+                  </li>
+                  <li>Experienced with Python</li>
+                  <li>Experience with Kubernetes, AzureDevops, Cypress</li>
+                </ul>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </ng-template>
+        <ng-template ngbSlide>
+          <mat-card class="experience">
+            <mat-card-header>
+              <mat-card-title>At Present</mat-card-title>
+            </mat-card-header>
+            <hr />
+            <mat-card-content>
+              <div class="div-work-history mb-25">
+                <h5 class="heading-7">2022, Aug - 2024, Aug</h5>
+                <h5 class="body-paragraph high-emphasis mt-2">Technical University of Denmark</h5>
+                <h5 id="Company-Location" class="body-paragraph low-emphasis">
+                   Denmark
+                </h5>
+                <h5 class="body-paragraph mt-2">Master's in Computer Science and Engineering</h5>
+              </div>
+              <div class="work-done">
+                <ul>
+                  <li>
+                    Technological Specialization in Software Engineering
+                  </li>
+                  <li>
+                    Electives like Artificial Intelligence, Data Security
+                  </li>
+                </ul>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-md-6">
+      <mat-card class="text">
+        <p class="text-center align-middle">
+          As a recent graduate with a Bachelor's degree in Computer Science, I
+          have 7 months of experience working as a Software Engineer. During
+          this time, I have gained a strong understanding of software
+          development principles and practices, and have demonstrated my ability
+          to work effectively in a team-oriented environment. I am currently
+          pursuing a <b>Master's degree in Computer Science</b>, which has
+          further enhanced my knowledge and skills in the field.<br />
+          I am confident that my combination of educational background and
+          professional experience make me a valuable asset to any organization.
+          I am a highly motivated and skilled software engineer with a passion
+          for technology and a drive to succeed.
+        </p>
+      </mat-card>
+    </div>
+  </div>
+</div>

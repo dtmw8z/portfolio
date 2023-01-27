@@ -7,14 +7,13 @@
 }
 
 .profile-icon {
-  position: absolute;
   width: 680px;
   height: 540px;
   left: 411px;
   top: 77px;
 }
 
-.ellipse1 {
+/* .ellipse1 {
   position: absolute;
   width: 345px;
   height: 366px;
@@ -34,9 +33,9 @@
   border-radius: 50%;
   z-index: -1;
   background: #63b8dc;
-}
+} */
 
-.name {
+.header-text {
   position: absolute;
   top: 40%;
   left: 2%;
@@ -45,6 +44,6 @@
 .getcv {
   position: absolute;
   top: 90%;
-  left: 3%;
+  left: 10%;
   align-items: center;
 }
