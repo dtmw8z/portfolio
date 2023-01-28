@@ -13,9 +13,15 @@
   border-radius: 10%;
   background-color: #e1ddbc;
   font-family: "Nunito", sans-serif;
-  font-weight: 1000;
+  font-weight: 700;
   font-size: x-large;
   text-align: center;
+}
+
+.mat-card-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
 }
 
 .heading-7 {

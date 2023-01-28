@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Skill, Category, Image} from './interface';
+import { Skills, Categories} from './initialize';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+   skills: Skill[] = Skills;
+    categories: Category[] = Categories;
+
+
+
+  constructor() {
+    console.log(this.categories);
+
+    
+  }
 
   ngOnInit(): void {
   }

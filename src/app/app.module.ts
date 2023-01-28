@@ -11,11 +11,11 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,11 +35,21 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatCardModule,
     NgbModule,
-    NgbCarouselModule
-
-
+    NgbCarouselModule,
+    NgCircleProgressModule.forRoot({
+      radius: 35,
+      outerStrokeWidth: 8,
+      innerStrokeWidth: 4,
+      showBackground: false,
+      startFromZero: false,
+      imageSrc: '',
+      imageHeight: 30,
+      imageWidth: 30,
+      showImage: true,
+      animation: true,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

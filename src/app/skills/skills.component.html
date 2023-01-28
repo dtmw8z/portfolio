@@ -3,13 +3,22 @@
   <hr />
 
   <div class="row">
-    <div class="col-md-3">
-      <mat-card class="skills">
+    <div class="col-md-6" *ngFor="let category of categories; let i = index">
+      <mat-card class="skill-card">
         <mat-card-header>
-          <mat-card-title>Programming Languages</mat-card-title>
+          <mat-card-title>{{ category.name }}</mat-card-title>
         </mat-card-header>
-        <mat-card-content>
-       
+
+        <mat-card-content *ngFor="let skills of category.skills">
+          <div class="row m-1">
+            <circle-progress
+              [percent]="skills.percentage"
+              [outerStrokeColor]="skills.outerStrokeColor"
+              [innerStrokeColor]="skills.innerStrokeColor"
+              [animationDuration]="300"
+              [imageSrc]="'assets/images/icons/' + skills.imageSource.name"
+            ></circle-progress>
+          </div>
         </mat-card-content>
       </mat-card>
     </div>
