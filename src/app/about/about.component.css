@@ -1,21 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;1000&display=swap");
 .image {
-  height: 450px;
-  width: 450px;
-  border-radius: 10%;
-  left: 7%;
+  height: 450;
+  width: 450;
   background-color: #e1ddbc;
 }
 
 .experience {
-  height: 450px;
-  width: 450px;
-  border-radius: 10%;
+  height: 450;
+  width: 450;
   background-color: #e1ddbc;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: x-large;
   text-align: center;
+}
+
+.text {
+  height: auto;
+  width: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  top: 40px;
+}
+
+mat-card {
+  border: #8a659c 1px solid;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .mat-card-title {
@@ -64,12 +79,30 @@
   left: 45%;
 }
 
-.text {
-  height: 350px;
-  width: 550px;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  color: #000000;
-  top: 40px;
+@media only screen and (max-width: 768px) {
+  ngb-carousel {
+    height: auto;
+    width: auto;
+  }
+
+  .text {
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    padding: 13px;
+  }
+
+  mat-card {
+    border: #8a659c 1px solid;
+  }
+
+  .experience {
+    height: auto;
+    width: auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+    background-color: white;
+  }
 }
