@@ -1,11 +1,3 @@
-.photo-icon {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: 1150px;
-  top: -30px;
-}
-
 .profile-icon {
   width: 680px;
   height: 540px;
@@ -13,37 +5,28 @@
   top: 77px;
 }
 
-/* .ellipse1 {
-  position: absolute;
-  width: 345px;
-  height: 366px;
-  left: 761px;
-  top: 86px;
-  border-radius: 50%;
-  z-index: -1;
-  background: #868ae9;
-}
-
-.ellipse2 {
-  position: absolute;
-  width: 286px;
-  height: 294px;
-  left: 857px;
-  top: 323px;
-  border-radius: 50%;
-  z-index: -1;
-  background: #63b8dc;
-} */
-
-.header-text {
-  position: absolute;
-  top: 40%;
-  left: 2%;
+.header {
+  margin-top: 94px;
 }
 
 .getcv {
-  position: absolute;
-  top: 90%;
-  left: 10%;
-  align-items: center;
+  margin: 70px 0px 0px 100px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .profile-icon {
+    width: 580px;
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .profile-icon {
+    width: 425px;
+    height: 325px;
+  }
+
+  .getcv {
+    margin: 70px 0px 0px 50px;
+  }
 }
